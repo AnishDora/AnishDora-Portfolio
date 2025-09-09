@@ -16,11 +16,15 @@ export const skills = [
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
   { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
   { name: 'Spring', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
-  { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' },
+
+  { name: 'Tailwind', icon: '/logos/tailwind.svg' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
   { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-  { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg' },
-  { name: 'Supabase', icon: 'https://raw.githubusercontent.com/supabase-community/brand-assets/main/supabase-logo-icon.png' }
+  { name: 'AWS', icon: '/logos/aws.svg' },
+  { name: 'Supabase', icon: '/logos/supabase.svg' },
+  { name: 'LangChain', icon: '/logos/langchain.svg' },
+  { name: 'LangGraph', icon: '/logos/langgraph.svg' }
+
 ];
 
 export const experiences = [

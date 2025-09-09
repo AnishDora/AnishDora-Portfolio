@@ -2,7 +2,6 @@ import { personal, skills, experiences, education, projects, publications } from
 
 function Section({ id, title, children }) {
   return (
-
     <section id={id} className="space-y-8 scroll-mt-24">
       <h2 className="text-3xl font-bold text-teal-400">{title}</h2>
       {children}
@@ -12,9 +11,8 @@ function Section({ id, title, children }) {
 
 function App() {
   return (
-
-    <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
-      <header className="fixed top-0 w-full bg-gray-900/70 backdrop-blur z-20">
+    <div className="min-h-screen bg-black text-gray-100 font-sans">
+      <header className="fixed top-0 w-full bg-black/70 backdrop-blur z-20">
         <nav className="container mx-auto flex flex-wrap items-center justify-between p-4">
           <h1 className="text-lg font-semibold tracking-wide">{personal.name}</h1>
           <ul className="flex flex-wrap gap-6 text-sm">
@@ -25,7 +23,6 @@ function App() {
             <li><a href="#projects" className="hover:text-teal-400 transition-colors">Projects</a></li>
             <li><a href="#publications" className="hover:text-teal-400 transition-colors">Publications</a></li>
             <li><a href="#contact" className="hover:text-teal-400 transition-colors">Contact</a></li>
-
           </ul>
         </nav>
       </header>
@@ -33,7 +30,7 @@ function App() {
 
       <section
         id="hero"
-        className="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-900 via-gray-800 to-black pt-24 px-4"
+        className="min-h-screen flex flex-col justify-center items-center text-center bg-black pt-24 px-4"
       >
         <h1 className="text-5xl sm:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-indigo-400">
           {personal.name}
@@ -69,14 +66,16 @@ function App() {
         </Section>
 
         <Section id="skills" title="Skills">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {skills.map((skill) => (
               <div
                 key={skill.name}
-                className="flex flex-col items-center bg-gray-800/60 p-4 rounded-lg hover:-translate-y-1 hover:shadow-lg transition"
+                className="w-32 h-32 flex flex-col items-center justify-center bg-gray-800/60 rounded-lg transition-transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
               >
-                <img src={skill.icon} alt={skill.name} className="h-12 w-12 object-contain" />
-                <span className="mt-2 text-sm">{skill.name}</span>
+                <img src={skill.icon} alt={skill.name} className="h-16 w-16 object-contain" />
+                <span className="mt-3 text-sm">{skill.name}</span>
+
               </div>
             ))}
           </div>
@@ -157,7 +156,9 @@ function App() {
         </Section>
       </main>
 
-      <footer className="bg-gray-900 text-center py-6 mt-10 text-sm text-gray-500">
+
+      <footer className="bg-black text-center py-6 mt-10 text-sm text-gray-500">
+
         <p>&copy; {new Date().getFullYear()} {personal.name}</p>
       </footer>
     </div>
