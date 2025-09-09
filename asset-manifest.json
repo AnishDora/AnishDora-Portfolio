@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AnishDora-Portfolio/static/css/main.70779438.css",
+    "main.js": "/AnishDora-Portfolio/static/js/main.fd4a10b3.js",
+    "static/js/453.eff10dc7.chunk.js": "/AnishDora-Portfolio/static/js/453.eff10dc7.chunk.js",
+    "index.html": "/AnishDora-Portfolio/index.html",
+    "main.70779438.css.map": "/AnishDora-Portfolio/static/css/main.70779438.css.map",
+    "main.fd4a10b3.js.map": "/AnishDora-Portfolio/static/js/main.fd4a10b3.js.map",
+    "453.eff10dc7.chunk.js.map": "/AnishDora-Portfolio/static/js/453.eff10dc7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70779438.css",
+    "static/js/main.fd4a10b3.js"
+  ]
+}

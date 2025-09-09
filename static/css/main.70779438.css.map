@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.70779438.css","mappings":"AAEA,KAEE,4BAAgC,CADhC,sBAEF","sources":["index.css"],"sourcesContent":["/* Tailwind CSS is loaded via CDN in public/index.html */\n\nhtml {\n  scroll-behavior: smooth;\n  font-family: 'Inter', sans-serif;\n}\n\n"],"names":[],"sourceRoot":""}
