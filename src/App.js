@@ -257,7 +257,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
           </button>
         </div>
         <nav className="space-y-4">
-          {['About', 'Skills', 'Experience', 'Education', 'Projects', 'Publications', 'Contact'].map((item) => (
+          {['About', 'Resume', 'Skills', 'Experience', 'Education', 'Projects', 'Publications', 'Contact'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -297,7 +297,7 @@ function App() {
           
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-1 text-sm">
-            {['About', 'Skills', 'Experience', 'Education', 'Projects', 'Publications', 'Contact'].map((item) => (
+            {['About', 'Resume', 'Skills', 'Experience', 'Education', 'Projects', 'Publications', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -403,6 +403,26 @@ function App() {
               <a href={`mailto:${personal.email}`} className="flex items-center gap-4 text-base hover:text-teal-300 transition-colors group">
                 <Icon.Mail className="h-5 w-5 text-teal-300 shrink-0 group-hover:scale-110 transition-transform" />
                 <span className="break-all">{personal.email}</span>
+              </a>
+            </div>
+          </Card>
+        </Section>
+
+        {/* Resume Section */}
+        <Section id="resume" title="Resume" subtitle="Download my latest CV">
+          <Card className="flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className="text-center sm:text-left">
+              <h3 className="text-xl font-semibold text-white">Tampara Venkata Santosh Anish Dora</h3>
+              <p className="text-sm text-gray-400 mt-1">Full Stack Software Engineer</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <a
+                href="/Anish_Dora_Resume.pdf"
+                download
+                className="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-gradient-to-r from-teal-500 to-indigo-500 text-white hover:opacity-90 transition-all duration-200"
+              >
+                <Icon.ArrowDown className="h-5 w-5" />
+                Download PDF
               </a>
             </div>
           </Card>
