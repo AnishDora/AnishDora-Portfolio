@@ -27,6 +27,7 @@ function App() {
         </nav>
       </header>
 
+
       <section
         id="hero"
         className="min-h-screen flex flex-col justify-center items-center text-center bg-black pt-24 px-4"
@@ -65,6 +66,7 @@ function App() {
         </Section>
 
         <Section id="skills" title="Skills">
+
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {skills.map((skill) => (
               <div
@@ -73,12 +75,14 @@ function App() {
               >
                 <img src={skill.icon} alt={skill.name} className="h-16 w-16 object-contain" />
                 <span className="mt-3 text-sm">{skill.name}</span>
+
               </div>
             ))}
           </div>
         </Section>
 
         <Section id="experience" title="Professional Experience">
+
           <div className="space-y-8">
             {experiences.map((exp) => (
               <div key={exp.company} className="bg-gray-800/60 p-6 rounded-lg shadow">
@@ -152,7 +156,9 @@ function App() {
         </Section>
       </main>
 
+
       <footer className="bg-black text-center py-6 mt-10 text-sm text-gray-500">
+
         <p>&copy; {new Date().getFullYear()} {personal.name}</p>
       </footer>
     </div>
