@@ -103,6 +103,6 @@ export const publications = [
   {
     title: 'A Graph Invariant Based TGO Model for RailTel Optical Networks',
     venue: 'Sixth International Conference on Intelligent Computing and Applications (ICICA 2020), Springer, Singapore',
-    link: '#'
+    link: 'https://link.springer.com/chapter/10.1007/978-981-16-1335-7_7'
   }
 ];
