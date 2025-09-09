@@ -2,6 +2,7 @@ import { personal, skills, experiences, education, projects, publications } from
 
 function Section({ id, title, children }) {
   return (
+
     <section id={id} className="space-y-8 scroll-mt-24">
       <h2 className="text-3xl font-bold text-teal-400">{title}</h2>
       {children}
@@ -11,6 +12,7 @@ function Section({ id, title, children }) {
 
 function App() {
   return (
+
     <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
       <header className="fixed top-0 w-full bg-gray-900/70 backdrop-blur z-20">
         <nav className="container mx-auto flex flex-wrap items-center justify-between p-4">
@@ -23,9 +25,11 @@ function App() {
             <li><a href="#projects" className="hover:text-teal-400 transition-colors">Projects</a></li>
             <li><a href="#publications" className="hover:text-teal-400 transition-colors">Publications</a></li>
             <li><a href="#contact" className="hover:text-teal-400 transition-colors">Contact</a></li>
+
           </ul>
         </nav>
       </header>
+
 
       <section
         id="hero"
@@ -79,6 +83,7 @@ function App() {
         </Section>
 
         <Section id="experience" title="Professional Experience">
+
           <div className="space-y-8">
             {experiences.map((exp) => (
               <div key={exp.company} className="bg-gray-800/60 p-6 rounded-lg shadow">
