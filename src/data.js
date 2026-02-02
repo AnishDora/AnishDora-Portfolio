@@ -3,7 +3,7 @@ export const personal = {
   title: 'Full Stack Software Engineer | Building AI Applications',
   location: 'Dublin, CA, 94568',
   phone: '+1-925-216-3699',
-  email: 'anishdora2755@gmail.com',
+  email: 'anishdora05@gmail.com',
   linkedin: 'https://www.linkedin.com/in/anish-dora',
   github: 'https://github.com/AnishDora'
 };
@@ -47,9 +47,11 @@ export const experiences = [
     period: 'Jan 2022 – Jun 2022',
     location: 'Remote, India',
     bullets: [
-      'Led migration of core modules from legacy .NET to Angular, TypeScript, and SaaS, modernizing Deloitte’s internal iRpm platform used by 5,000+ employees.',
-      'Engineered reusable UI components using Angular to boost responsiveness and accessibility in high-traffic modules, leading to a 20% reduction in UI-related issues.',
-      'Spearheaded the integration of automated testing within UI workflows, resulting in a 60% reduction in testing time and improving the accessibility score from 60 to 85 WCAG standards.'
+      'Migrated enterprise iRPM modules from legacy .NET to React and TypeScript, modernizing SaaS platforms used by 5,000+ employees.',
+      'Improved React application performance using code splitting and lazy loading, reducing bundle size by 35% and page load times by 45%.',
+      'Built reusable, accessible React components following WCAG standards, reducing UI defects by 20%.',
+      'Integrated Selenium-based testing into CI/CD pipelines, cutting regression testing time by 60% and improving accessibility scores from 60 to 85.',
+      'Collaborated with cross-functional teams to deliver features through code reviews, sprint planning, and production deployments in an Agile environment.'
     ]
   }
 ];
@@ -78,6 +80,32 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    name: 'AI Resume & Cover Letter Tailor',
+    period: 'Nov 2025 – Dec 2025',
+    bullets: [
+      'Built a full-stack Next.js application that uses GenAI to generate job-specific resumes and cover letters.',
+      'Designed structured LLM prompt workflows to extract skills and align content with job descriptions.',
+      'Implemented authentication and user dashboards for managing generated documents and revision history.',
+      'Designed relational data models and implemented persistence using PostgreSQL with Prisma ORM.',
+      'Optimized application performance using server actions, SSR, and API routes.',
+      'Implemented input validation and fallback handling to ensure reliable AI outputs and consistent user experience.',
+      'Skills: Next.js · PostgreSQL · Large Language Models (LLM) · Generative AI'
+    ]
+  },
+  {
+    name: 'AI Notes Summarizer & Knowledge Manager',
+    period: 'Sep 2025',
+    bullets: [
+      'Developed a full-stack MERN application that uses GenAI to summarize and organize user notes and documents.',
+      'Integrated LLM-based summarization and key-point extraction for long-form text content.',
+      'Built a React-based UI for creating, tagging, searching, and managing notes.',
+      'Implemented JWT-based authentication and secure REST APIs using Express.js.',
+      'Designed efficient MongoDB schemas and queries to support scalable content storage and retrieval.',
+      'Added search and filtering capabilities across notes and AI-generated summaries to improve content discoverability.',
+      'Skills: React.js · Express.js · Node.js · Generative AI · Large Language Models (LLM)'
+    ]
+  },
   {
     name: 'Chat with PDFs - Full-Stack RAG Application',
     period: 'Aug 2025 – Sept 2025',
