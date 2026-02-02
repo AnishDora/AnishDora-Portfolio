@@ -460,7 +460,7 @@ function App() {
         <Section id="skills" title="Technical Skills" subtitle="Technologies I work with daily">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {skills.map((skill, index) => (
-              <SkillBadge key={skill.name} {...skill} />
+              <SkillBadge key= {skill.name} {...skill} />
             ))}
           </div>
         </Section>
